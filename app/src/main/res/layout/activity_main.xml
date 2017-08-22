@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alejandrasalas.tallertoolbar.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imag1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/icons8_tarjeta_de_empleado_96"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextWhite"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        android:layout_toRightOf="@id/imag1"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_nom"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imag2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/icons8_tel_fono_96"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextWhite"
+            android:layout_toRightOf="@id/imag2"
+            >
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_Tel"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:id="@+id/imag3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icons8_mensaje_relleno_96"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextWhite"
+            android:layout_toRightOf="@id/imag3"
+            >
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/corr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_email"
+                android:inputType="textEmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cancelar"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="60dp"
+                android:theme="@style/RaiseButtonDark1"
+                />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Aceptar"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:theme="@style/RaiseButtonDark2"
+                />
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
